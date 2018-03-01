@@ -1,0 +1,606 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: lab4_seven_segment_display.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab4_seven_segment_display.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab4_seven_segment_display"
+Output Format                      : NGC
+Target Device                      : xc7a200t-3-fbg484
+
+---- Source Options
+Top Module Name                    : lab4_seven_segment_display
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\Mux.vhf" into library work
+Parsing entity <Mux>.
+Parsing architecture <BEHAVIORAL> of entity <mux>.
+Parsing VHDL file "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\Clocking.vhf" into library work
+Parsing entity <FTC_HXILINX_Clocking>.
+Parsing architecture <Behavioral> of entity <ftc_hxilinx_clocking>.
+Parsing entity <D2_4E_HXILINX_Clocking>.
+Parsing architecture <D2_4E_HXILINX_Clocking_V> of entity <d2_4e_hxilinx_clocking>.
+Parsing entity <CB2CE_HXILINX_Clocking>.
+Parsing architecture <Behavioral> of entity <cb2ce_hxilinx_clocking>.
+Parsing entity <Clocking>.
+Parsing architecture <BEHAVIORAL> of entity <clocking>.
+Parsing VHDL file "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\Binary_to_Seven.vhf" into library work
+Parsing entity <NOR6_HXILINX_Binary_to_Seven>.
+Parsing architecture <NOR6_HXILINX_Binary_to_Seven_V> of entity <nor6_hxilinx_binary_to_seven>.
+Parsing entity <Binary_to_Seven>.
+Parsing architecture <BEHAVIORAL> of entity <binary_to_seven>.
+Parsing VHDL file "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" into library work
+Parsing entity <FTC_HXILINX_lab4_seven_segment_display>.
+Parsing architecture <Behavioral> of entity <ftc_hxilinx_lab4_seven_segment_display>.
+Parsing entity <NOR6_HXILINX_lab4_seven_segment_display>.
+Parsing architecture <NOR6_HXILINX_lab4_seven_segment_display_V> of entity <nor6_hxilinx_lab4_seven_segment_display>.
+Parsing entity <D2_4E_HXILINX_lab4_seven_segment_display>.
+Parsing architecture <D2_4E_HXILINX_lab4_seven_segment_display_V> of entity <d2_4e_hxilinx_lab4_seven_segment_display>.
+Parsing entity <CB2CE_HXILINX_lab4_seven_segment_display>.
+Parsing architecture <Behavioral> of entity <cb2ce_hxilinx_lab4_seven_segment_display>.
+Parsing entity <Clocking_MUSER_lab4_seven_segment_display>.
+Parsing architecture <BEHAVIORAL> of entity <clocking_muser_lab4_seven_segment_display>.
+Parsing entity <Binary_to_Seven_MUSER_lab4_seven_segment_display>.
+Parsing architecture <BEHAVIORAL> of entity <binary_to_seven_muser_lab4_seven_segment_display>.
+Parsing entity <Mux_MUSER_lab4_seven_segment_display>.
+Parsing architecture <BEHAVIORAL> of entity <mux_muser_lab4_seven_segment_display>.
+Parsing entity <lab4_seven_segment_display>.
+Parsing architecture <BEHAVIORAL> of entity <lab4_seven_segment_display>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <lab4_seven_segment_display> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Mux_MUSER_lab4_seven_segment_display> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Binary_to_Seven_MUSER_lab4_seven_segment_display> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <NOR6_HXILINX_lab4_seven_segment_display> (architecture <NOR6_HXILINX_lab4_seven_segment_display_V>) from library <work>.
+
+Elaborating entity <Clocking_MUSER_lab4_seven_segment_display> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <FTC_HXILINX_lab4_seven_segment_display> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <CB2CE_HXILINX_lab4_seven_segment_display> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <D2_4E_HXILINX_lab4_seven_segment_display> (architecture <D2_4E_HXILINX_lab4_seven_segment_display_V>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 116. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 233: Net <XLXI_13_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 234: Net <XLXI_44_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 235: Net <XLXI_46_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 236: Net <XLXI_48_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 237: Net <XLXI_50_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 238: Net <XLXI_52_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 239: Net <XLXI_54_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 240: Net <XLXI_56_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 241: Net <XLXI_62_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 242: Net <XLXI_64_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 243: Net <XLXI_66_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 244: Net <XLXI_68_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 245: Net <XLXI_70_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 246: Net <XLXI_72_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 247: Net <XLXI_74_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 248: Net <XLXI_76_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" Line 249: Net <XLXI_125_CLR_openSignal> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+    Summary:
+	no macro.
+Unit <lab4_seven_segment_display> synthesized.
+
+Synthesizing Unit <Mux_MUSER_lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+    Summary:
+	no macro.
+Unit <Mux_MUSER_lab4_seven_segment_display> synthesized.
+
+Synthesizing Unit <Binary_to_Seven_MUSER_lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+    Set property "HU_SET = XLXI_50_38" for instance <XLXI_50>.
+    Summary:
+	no macro.
+Unit <Binary_to_Seven_MUSER_lab4_seven_segment_display> synthesized.
+
+Synthesizing Unit <NOR6_HXILINX_lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+    Summary:
+	no macro.
+Unit <NOR6_HXILINX_lab4_seven_segment_display> synthesized.
+
+Synthesizing Unit <Clocking_MUSER_lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+    Set property "HU_SET = XLXI_13_20" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_44_21" for instance <XLXI_44>.
+    Set property "HU_SET = XLXI_46_22" for instance <XLXI_46>.
+    Set property "HU_SET = XLXI_48_23" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_50_24" for instance <XLXI_50>.
+    Set property "HU_SET = XLXI_52_25" for instance <XLXI_52>.
+    Set property "HU_SET = XLXI_54_26" for instance <XLXI_54>.
+    Set property "HU_SET = XLXI_56_27" for instance <XLXI_56>.
+    Set property "HU_SET = XLXI_62_28" for instance <XLXI_62>.
+    Set property "HU_SET = XLXI_64_29" for instance <XLXI_64>.
+    Set property "HU_SET = XLXI_66_30" for instance <XLXI_66>.
+    Set property "HU_SET = XLXI_68_31" for instance <XLXI_68>.
+    Set property "HU_SET = XLXI_70_32" for instance <XLXI_70>.
+    Set property "HU_SET = XLXI_72_33" for instance <XLXI_72>.
+    Set property "HU_SET = XLXI_74_34" for instance <XLXI_74>.
+    Set property "HU_SET = XLXI_76_35" for instance <XLXI_76>.
+    Set property "HU_SET = XLXI_125_36" for instance <XLXI_125>.
+    Set property "HU_SET = XLXI_127_37" for instance <XLXI_127>.
+INFO:Xst:3210 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" line 515: Output port <CEO> of the instance <XLXI_125> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf" line 515: Output port <TC> of the instance <XLXI_125> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <XLXI_13_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_44_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_46_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_48_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_50_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_52_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_54_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_56_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_62_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_64_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_66_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_68_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_70_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_72_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_74_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_76_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_125_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Clocking_MUSER_lab4_seven_segment_display> synthesized.
+
+Synthesizing Unit <FTC_HXILINX_lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+        INIT = '0'
+    Found 1-bit register for signal <q_tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FTC_HXILINX_lab4_seven_segment_display> synthesized.
+
+Synthesizing Unit <CB2CE_HXILINX_lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+    Found 2-bit register for signal <COUNT>.
+    Found 2-bit adder for signal <COUNT[1]_GND_13_o_add_0_OUT> created at line 161.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <CB2CE_HXILINX_lab4_seven_segment_display> synthesized.
+
+Synthesizing Unit <D2_4E_HXILINX_lab4_seven_segment_display>.
+    Related source file is "C:\Users\user\Desktop\COL215LAB\lab4_seven_segment_display\lab4_seven_segment_display.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <D2_4E_HXILINX_lab4_seven_segment_display> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Registers                                            : 17
+ 1-bit register                                        : 16
+ 2-bit register                                        : 1
+# Multiplexers                                         : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CB2CE_HXILINX_lab4_seven_segment_display>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB2CE_HXILINX_lab4_seven_segment_display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Multiplexers                                         : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <lab4_seven_segment_display> ...
+
+Optimizing unit <Clocking_MUSER_lab4_seven_segment_display> ...
+
+Optimizing unit <Mux_MUSER_lab4_seven_segment_display> ...
+
+Optimizing unit <Binary_to_Seven_MUSER_lab4_seven_segment_display> ...
+
+Optimizing unit <FTC_HXILINX_lab4_seven_segment_display> ...
+
+Optimizing unit <CB2CE_HXILINX_lab4_seven_segment_display> ...
+
+Optimizing unit <D2_4E_HXILINX_lab4_seven_segment_display> ...
+
+Optimizing unit <NOR6_HXILINX_lab4_seven_segment_display> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab4_seven_segment_display, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lab4_seven_segment_display.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 111
+#      AND2                        : 57
+#      AND3                        : 11
+#      GND                         : 1
+#      INV                         : 30
+#      LUT2                        : 5
+#      LUT6                        : 1
+#      OR2                         : 1
+#      OR4                         : 4
+#      VCC                         : 1
+# FlipFlops/Latches                : 18
+#      FDCE                        : 16
+#      FDE                         : 2
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 29
+#      IBUF                        : 18
+#      OBUF                        : 11
+# Logical                          : 6
+#      NOR4                        : 1
+#      NOR5                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a200tfbg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              18  out of  269200     0%  
+ Number of Slice LUTs:                   36  out of  134600     0%  
+    Number used as Logic:                36  out of  134600     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     54
+   Number with an unused Flip Flop:      36  out of     54    66%  
+   Number with an unused LUT:            18  out of     54    33%  
+   Number of fully used LUT-FF pairs:     0  out of     54     0%  
+   Number of unique control sets:        17
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    285    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)            | Load  |
+-----------------------------------+----------------------------------+-------+
+clk                                | IBUF+BUFG                        | 16    |
+XLXI_10/XLXN_157(XLXI_10/XLXI_85:O)| NONE(*)(XLXI_10/XLXI_125/COUNT_0)| 2     |
+-----------------------------------+----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 12.653ns (Maximum Frequency: 79.034MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.787ns
+   Maximum combinational path delay: 4.328ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.653ns (frequency: 79.034MHz)
+  Total number of paths / destination ports: 136 / 31
+-------------------------------------------------------------------------
+Delay:               12.653ns (Levels of Logic = 16)
+  Source:            XLXI_10/XLXI_13/q_tmp (FF)
+  Destination:       XLXI_10/XLXI_76/q_tmp (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_10/XLXI_13/q_tmp to XLXI_10/XLXI_76/q_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.698  q_tmp (q_tmp)
+     end scope: 'XLXI_10/XLXI_13:Q'
+     AND2:I0->O            2   0.097   0.688  XLXI_10/XLXI_33 (XLXI_10/XLXN_47)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_45 (XLXI_10/XLXN_172)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_47 (XLXI_10/XLXN_53)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_49 (XLXI_10/XLXN_56)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_51 (XLXI_10/XLXN_59)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_53 (XLXI_10/XLXN_62)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_55 (XLXI_10/XLXN_65)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_57 (XLXI_10/XLXN_74)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_63 (XLXI_10/XLXN_77)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_65 (XLXI_10/XLXN_80)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_67 (XLXI_10/XLXN_83)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_69 (XLXI_10/XLXN_86)
+     AND2:I1->O            2   0.107   0.688  XLXI_10/XLXI_71 (XLXI_10/XLXN_89)
+     AND2:I1->O            2   0.107   0.687  XLXI_10/XLXI_73 (XLXI_10/XLXN_92)
+     AND2:I1->O            1   0.107   0.279  XLXI_10/XLXI_75 (XLXI_10/XLXN_95)
+     begin scope: 'XLXI_10/XLXI_76:T'
+     FDCE:CE                   0.095          q_tmp
+    ----------------------------------------
+    Total                     12.653ns (2.051ns logic, 10.602ns route)
+                                       (16.2% logic, 83.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_10/XLXN_157'
+  Clock period: 1.064ns (frequency: 940.115MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               1.064ns (Levels of Logic = 1)
+  Source:            XLXI_10/XLXI_125/COUNT_0 (FF)
+  Destination:       XLXI_10/XLXI_125/COUNT_0 (FF)
+  Source Clock:      XLXI_10/XLXN_157 rising
+  Destination Clock: XLXI_10/XLXN_157 rising
+
+  Data Path: XLXI_10/XLXI_125/COUNT_0 to XLXI_10/XLXI_125/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.361   0.302  COUNT_0 (COUNT_0)
+     INV:I->O              1   0.113   0.279  Mcount_COUNT_xor<0>11_INV_0 (Result<0>)
+     FDE:D                     0.008          COUNT_0
+    ----------------------------------------
+    Total                      1.064ns (0.482ns logic, 0.582ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_10/XLXN_157'
+  Total number of paths / destination ports: 656 / 11
+-------------------------------------------------------------------------
+Offset:              6.787ns (Levels of Logic = 11)
+  Source:            XLXI_10/XLXI_125/COUNT_0 (FF)
+  Destination:       cathode<6> (PAD)
+  Source Clock:      XLXI_10/XLXN_157 rising
+
+  Data Path: XLXI_10/XLXI_125/COUNT_0 to cathode<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.361   0.402  COUNT_0 (COUNT_0)
+     end scope: 'XLXI_10/XLXI_125:Q0'
+     begin scope: 'XLXI_10/XLXI_127:A0'
+     LUT2:I0->O            1   0.097   0.279  Mmux_d_tmp21 (D1)
+     end scope: 'XLXI_10/XLXI_127:D1'
+     INV:I->O              2   0.511   0.284  XLXI_10/XLXI_133 (anode_1_OBUF)
+     INV:I->O              4   0.511   0.697  XLXI_3/XLXI_63 (XLXI_3/XLXN_125)
+     AND2:I1->O            1   0.107   0.556  XLXI_3/XLXI_17 (XLXI_3/XLXN_28)
+     OR4:I2->O            12   0.234   0.330  XLXI_3/XLXI_20 (XLXN_6)
+     INV:I->O             11   0.511   0.603  XLXI_4/XLXI_19 (XLXI_4/XLXN_17)
+     AND3:I2->O            1   0.234   0.693  XLXI_4/XLXI_67 (XLXI_4/XLXN_130)
+     NOR5:I0->O            1   0.097   0.279  XLXI_4/XLXI_68 (cathode_5_OBUF)
+     OBUF:I->O                 0.000          cathode_5_OBUF (cathode<5>)
+    ----------------------------------------
+    Total                      6.787ns (2.663ns logic, 4.124ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 324 / 7
+-------------------------------------------------------------------------
+Delay:               4.328ns (Levels of Logic = 7)
+  Source:            b<15> (PAD)
+  Destination:       cathode<6> (PAD)
+
+  Data Path: b<15> to cathode<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.693  b_15_IBUF (b_15_IBUF)
+     AND2:I0->O            1   0.097   0.693  XLXI_3/XLXI_19 (XLXI_3/XLXN_30)
+     OR4:I0->O            12   0.097   0.330  XLXI_3/XLXI_20 (XLXN_6)
+     INV:I->O             11   0.511   0.603  XLXI_4/XLXI_19 (XLXI_4/XLXN_17)
+     AND3:I2->O            1   0.234   0.693  XLXI_4/XLXI_67 (XLXI_4/XLXN_130)
+     NOR5:I0->O            1   0.097   0.279  XLXI_4/XLXI_68 (cathode_5_OBUF)
+     OBUF:I->O                 0.000          cathode_5_OBUF (cathode<5>)
+    ----------------------------------------
+    Total                      4.328ns (1.037ns logic, 3.291ns route)
+                                       (24.0% logic, 76.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_10/XLXN_157
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_10/XLXN_157|    1.064|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   12.653|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.59 secs
+ 
+--> 
+
+Total memory usage is 497644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

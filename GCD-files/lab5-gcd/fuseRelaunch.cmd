@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd_isim_beh.exe" -prj "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd_beh.prj" "work.lab5_gcd" 

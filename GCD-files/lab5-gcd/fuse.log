@@ -1,0 +1,42 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd_isim_beh.exe -prj C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd_beh.prj work.lab5_gcd 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.vhd" into library work
+Parsing VHDL file "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/Binary_to_Seven.vhf" into library work
+Parsing VHDL file "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/Clocking.vhf" into library work
+Parsing VHDL file "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab4_seven_segment_display.vhf" into library work
+Parsing VHDL file "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/Mux.vhf" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package vcomponents
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture or4_v of entity OR4 [or4_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture behavioral of entity Mux_MUSER_lab4_seven_segment_display [mux_muser_lab4_seven_segment_dis...]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture nor5_v of entity NOR5 [nor5_default]
+Compiling architecture nor6_hxilinx_lab4_seven_segment_display_v of entity NOR6_HXILINX_lab4_seven_segment_display [nor6_hxilinx_lab4_seven_segment_...]
+Compiling architecture nor4_v of entity NOR4 [nor4_default]
+Compiling architecture behavioral of entity Binary_to_Seven_MUSER_lab4_seven_segment_display [binary_to_seven_muser_lab4_seven...]
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity FTC_HXILINX_lab4_seven_segment_display [\FTC_HXILINX_lab4_seven_segment_...]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture vcc_v of entity VCC [vcc_default]
+Compiling architecture behavioral of entity CB2CE_HXILINX_lab4_seven_segment_display [cb2ce_hxilinx_lab4_seven_segment...]
+Compiling architecture d2_4e_hxilinx_lab4_seven_segment_display_v of entity D2_4E_HXILINX_lab4_seven_segment_display [d2_4e_hxilinx_lab4_seven_segment...]
+Compiling architecture behavioral of entity Clocking_MUSER_lab4_seven_segment_display [clocking_muser_lab4_seven_segmen...]
+Compiling architecture behavioral of entity Clocking2_MUSER_lab4_seven_segment_display [clocking2_muser_lab4_seven_segme...]
+Compiling architecture behavioral of entity lab4_seven_segment_display [lab4_seven_segment_display_defau...]
+Compiling architecture behavioral2 of entity lab5_gcd
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 41 VHDL Units
+Built simulation executable C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd_isim_beh.exe
+Fuse Memory Usage: 50320 KB
+Fuse CPU Usage: 577 ms

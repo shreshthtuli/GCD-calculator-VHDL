@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,artix7,-flat,-suppress,-vhdl,C:/Users/user/Desktop/COL215LAB/lab4_seven_segment_display/Binary_to_Seven.vhf,-w,C:/Users/user/Desktop/COL215LAB/lab4_seven_segment_display/Binary_to_Seven.sch
+sch2hdl,-intstyle,ise,-family,artix7,-flat,-suppress,-vhdl,C:/Users/user/Desktop/COL215LAB/lab4_seven_segment_display/lab4_seven_segment_display.vhf,-w,C:/Users/user/Desktop/COL215LAB/lab4_seven_segment_display/lab4_seven_segment_display.sch
+sch2hdl,-intstyle,ise,-family,artix7,-flat,-suppress,-vhdl,C:/Users/user/Desktop/COL215LAB/lab4_seven_segment_display/lab4_seven_segment_display.vhf,-w,C:/Users/user/Desktop/COL215LAB/lab4_seven_segment_display/lab4_seven_segment_display.sch

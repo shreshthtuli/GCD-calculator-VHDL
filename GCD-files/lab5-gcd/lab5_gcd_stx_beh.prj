@@ -1,0 +1,5 @@
+vhdl isim_temp "lab5_gcd.vhd"
+vhdl isim_temp "Binary_to_Seven.vhf"
+vhdl isim_temp "Clocking.vhf"
+vhdl isim_temp "lab4_seven_segment_display.vhf"
+vhdl isim_temp "Mux.vhf"

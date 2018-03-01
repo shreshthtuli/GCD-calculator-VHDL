@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.vhd" Line 2079: Syntax error near &quot;<arg fmt="%s" index="1">PROCESS</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.vhd" Line 2082: Syntax error near &quot;<arg fmt="%s" index="1">BEGIN</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.vhd" Line 2084: Syntax error near &quot;<arg fmt="%s" index="1">PROCESS</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="841" delta="unknown" >"C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.vhd" Line 2086: Expecting type <arg fmt="%s" index="2"> void</arg> for &lt;<arg fmt="%s" index="1">behavioral2</arg>&gt;.
+</msg>
+
+</messages>
+

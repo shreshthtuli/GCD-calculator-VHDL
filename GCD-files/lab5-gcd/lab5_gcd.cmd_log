@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/btech/cs1160680/lab5_gcd/lab5_gcd.xst" -ofn "/home/btech/cs1160680/lab5_gcd/lab5_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a200t-fbg484-3 lab5_gcd.ngc lab5_gcd.ngd  
+map -intstyle ise -p xc7a200t-fbg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lab5_gcd_map.ncd lab5_gcd.ngd lab5_gcd.pcf 
+vhdtdtfi -prj lab5_gcd -o /home/btech/cs1160680/lab5_gcd/lab5_gcd.vhi -module lab5_gcd -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work lab5_gcd.vhd 
+xst -intstyle ise -ifn "C:/Users/user/Desktop/COL215LAB/COL215Lab/lab5_gcd/lab5_gcd.xst" -ofn "C:/Users/user/Desktop/COL215LAB/COL215Lab/lab5_gcd/lab5_gcd.syr" 
+xst -intstyle ise -ifn "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.xst" -ofn "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.syr" 
+xst -intstyle ise -ifn "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.xst" -ofn "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.syr" 
+xst -intstyle ise -ifn "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.xst" -ofn "C:/Users/user/Desktop/COL215LAB/lab5_gcd/lab5_gcd/lab5_gcd.syr" 
