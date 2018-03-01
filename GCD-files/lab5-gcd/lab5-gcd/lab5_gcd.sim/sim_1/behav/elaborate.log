@@ -1,0 +1,45 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto aab8f8c01773403aaf3607e4491b8f0b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot lab5_gcd_tb_behav xil_defaultlib.lab5_gcd_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_unsigned
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture and2_v of entity unisim.AND2 [and2_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture or4_v of entity unisim.OR4 [or4_default]
+Compiling architecture inv_v of entity unisim.INV [inv_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_MUSER_lab4_seven_segment_display [mux_muser_lab4_seven_segment_dis...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture and3_v of entity unisim.AND3 [and3_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture nor5_v of entity unisim.NOR5 [nor5_default]
+Compiling architecture nor6_hxilinx_lab4_seven_segment_display_v of entity xil_defaultlib.NOR6_HXILINX_lab4_seven_segment_display [nor6_hxilinx_lab4_seven_segment_...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture nor4_v of entity unisim.NOR4 [nor4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Binary_to_Seven_MUSER_lab4_seven_segment_display [binary_to_seven_muser_lab4_seven...]
+Compiling architecture behavioral of entity xil_defaultlib.FTC_HXILINX_lab4_seven_segment_display [ftc_hxilinx_lab4_seven_segment_d...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture or2_v of entity unisim.OR2 [or2_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.CB2CE_HXILINX_lab4_seven_segment_display [cb2ce_hxilinx_lab4_seven_segment...]
+Compiling architecture d2_4e_hxilinx_lab4_seven_segment_display_v of entity xil_defaultlib.D2_4E_HXILINX_lab4_seven_segment_display [d2_4e_hxilinx_lab4_seven_segment...]
+Compiling architecture behavioral of entity xil_defaultlib.Clocking_MUSER_lab4_seven_segment_display [clocking_muser_lab4_seven_segmen...]
+Compiling architecture behavioral of entity xil_defaultlib.Clocking2_MUSER_lab4_seven_segment_display [clocking2_muser_lab4_seven_segme...]
+Compiling architecture behavioral of entity xil_defaultlib.lab4_seven_segment_display [lab4_seven_segment_display_defau...]
+Compiling architecture behavioral2 of entity xil_defaultlib.lab5_gcd [lab5_gcd_default]
+Compiling architecture behavior of entity xil_defaultlib.lab5_gcd_tb
+Built simulation snapshot lab5_gcd_tb_behav
