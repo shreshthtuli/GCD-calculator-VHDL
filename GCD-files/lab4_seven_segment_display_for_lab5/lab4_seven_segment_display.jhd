@@ -1,0 +1,9 @@
+MODULE lab4_seven_segment_display
+	SUBMODULE Mux
+		INSTANCE XLXI_3
+	SUBMODULE Binary_to_Seven
+		INSTANCE XLXI_4
+	SUBMODULE Clocking
+		INSTANCE XLXI_22
+	SUBMODULE Clocking2
+		INSTANCE XLXI_23

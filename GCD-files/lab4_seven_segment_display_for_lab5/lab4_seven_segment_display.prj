@@ -1,0 +1,5 @@
+vhdl work "Mux.vhf"
+vhdl work "Clocking2.vhf"
+vhdl work "Clocking.vhf"
+vhdl work "Binary_to_Seven.vhf"
+vhdl work "lab4_seven_segment_display.vhf"
